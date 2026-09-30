@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bothi Nobody · Guías y Palancas</title>
+<meta name="description" content="Guías y Palancas, 2.ª edición corregida y aumentada. Aventuras de un humilde Bodhisattva saboreando a Samsara. Por Bothi Nobody.">
+<link rel="canonical" href="https://bothinobody.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bothinobody.com/">
+<meta property="og:title" content="Guías y Palancas · Bothi Nobody">
+<meta property="og:description" content="Aventuras de un humilde Bodhisattva saboreando a Samsara. 2.ª edición, ahora con voces.">
+<meta property="og:image" content="https://bothinobody.com/img/gyp-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23E9ECE6' stroke='%23B9651A' stroke-width='4'/%3E%3Cpath d='M10 44 L22 30 L30 38 L40 22 L54 44' fill='none' stroke='%231B2A33' stroke-width='4'/%3E%3C/svg%3E">
+<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a pilgrim's field map — one narrow reading column, the Map as a trail down the page, voice tags [[ ]] left visible as section seams */
+:root{
+  --bg:#E9ECE6;        /* lichen paper */
+  --surface:#F5F6F2;
+  --ink:#1B2A33;       /* slate-indigo ink */
+  --muted:#56656C;
+  --line:#C3CBC4;
+  --saffron:#B9651A;   /* monk's robe, used sparingly */
+  --lapis:#2F4F8A;
+  --display:"Gloock", "Iowan Old Style", Georgia, serif;
+  --body:"Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --step-0:1.0625rem; --step-1:1.3rem; --step-2:1.75rem; --step-3:2.5rem; --step-4:clamp(2.6rem, 7vw, 4.6rem);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121A1F; --surface:#18232A; --ink:#E4E8E2; --muted:#9AA8AD; --line:#2E3C44;
+    --saffron:#E39A4C; --lapis:#8FAEE6; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121A1F; --surface:#18232A; --ink:#E4E8E2; --muted:#9AA8AD; --line:#2E3C44;
+  --saffron:#E39A4C; --lapis:#8FAEE6; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:var(--step-0);line-height:1.6;padding-inline:20px;padding-block:0}
+.wrap{max-width:62rem;margin-inline:auto}
+.col{max-width:40rem}
+a{color:var(--lapis);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+
+/* bilingual */
+html[data-lang="es"] [lang="en"]:not(html), html[data-lang="en"] [lang="es"]:not(html){display:none!important}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-20px;padding:10px 20px}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.sig{font-family:var(--display);font-size:1.2rem;text-decoration:none;color:var(--ink)}
+.bar nav{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.bar nav a{color:var(--muted);text-decoration:none}
+.bar nav a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{font:500 .75rem var(--mono);letter-spacing:.08em;background:transparent;color:var(--muted);border:0;padding:5px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+.tag{font-family:var(--mono);font-size:.78rem;letter-spacing:.05em;color:var(--saffron);display:block;margin-bottom:14px}
+section{padding-block:72px;border-bottom:1px solid var(--line)}
+
+/* hero */
+.hero{padding-block:64px 72px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:48px;align-items:center}
+.hero h1{font-size:var(--step-4);letter-spacing:-.01em}
+.hero .sub{font-family:var(--display);font-size:var(--step-1);color:var(--muted);margin-top:14px;font-style:italic}
+.hero .lead{margin-top:24px;max-width:34rem}
+.ed{display:inline-flex;gap:10px;align-items:center;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--saffron);color:var(--saffron);padding:4px 10px;border-radius:2px;margin-bottom:22px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:12px 20px;border-radius:3px;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--saffron)}
+.cover{justify-self:center;width:100%;max-width:300px;aspect-ratio:2/3;background:var(--surface);border:1px solid var(--line);box-shadow:14px 14px 0 var(--line);display:flex;flex-direction:column;justify-content:space-between;padding:26px 22px}
+.cover .ct{font-family:var(--display);font-size:2rem;line-height:1.02}
+.cover .cs{font-size:.85rem;color:var(--muted);margin-top:10px}
+.cover .ca{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.cover .mark{width:64px;height:64px}
+.cover .mark circle{fill:none;stroke:var(--saffron);stroke-width:2}
+.cover .mark path{fill:none;stroke:var(--ink);stroke-width:1.5}
+
+/* motto */
+.motto{text-align:left;padding-block:88px}
+.motto p{font-family:var(--display);font-size:var(--step-3);line-height:1.15;max-width:48rem;text-wrap:balance}
+.motto em{font-style:normal;color:var(--saffron)}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.voice{padding:22px 20px 4px 0;border-right:1px solid var(--line);min-width:0}
+.voice + .voice{padding-left:20px}
+.voice:last-child{border-right:0}
+.voice code{font-family:var(--mono);font-size:.85rem;color:var(--saffron)}
+.voice h3{font-size:var(--step-2);margin:8px 0 10px}
+.voice p{font-size:.95rem;color:var(--muted)}
+
+/* map */
+.map{list-style:none;padding:0;margin:40px 0 0;position:relative}
+.map::before{content:"";position:absolute;left:21px;top:10px;bottom:10px;border-left:2px dashed var(--line)}
+.map li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;padding-block:14px;position:relative}
+.map .n{width:44px;height:44px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);font-size:.8rem;font-variant-numeric:tabular-nums;position:relative}
+.map li:last-child .n{background:var(--saffron);border-color:var(--saffron);color:var(--bg)}
+.map .terr{font-family:var(--display);font-size:var(--step-1)}
+.map .verb{font-family:var(--mono);font-size:.82rem;color:var(--saffron);letter-spacing:.04em;margin-left:8px}
+.map .d{color:var(--muted);font-size:.95rem;margin-top:2px}
+
+/* formats */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:36px}
+.fmt{background:var(--bg);padding:26px 24px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.fmt h3{font-size:var(--step-2)}
+.fmt p{color:var(--muted);font-size:.95rem}
+.status{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;align-self:flex-start;padding:3px 8px;border-radius:2px;border:1px solid currentColor}
+.status.live{color:var(--lapis)}
+.status.soon{color:var(--muted)}
+.fmt a.go{font-weight:700;margin-top:auto}
+
+/* soundtrack */
+.tracks{margin-top:28px;border-top:1px solid var(--line)}
+.track{display:grid;grid-template-columns:5.5rem minmax(0,1fr) auto;gap:16px;align-items:baseline;padding-block:16px;border-bottom:1px solid var(--line)}
+.track .ch{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.track .t{font-family:var(--display);font-size:var(--step-1)}
+.track .by{color:var(--muted);font-size:.9rem}
+
+/* series */
+.series{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:36px}
+.book{border-top:3px solid var(--line);padding-top:14px;min-width:0}
+.book.here{border-top-color:var(--saffron)}
+.book .p{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.book h3{font-size:1.35rem;margin:6px 0 8px}
+.book p{font-size:.92rem;color:var(--muted)}
+
+/* support */
+.support{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;margin-top:8px}
+.lists h4{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--saffron);margin:22px 0 6px;font-weight:500}
+.lists ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.ways{display:flex;flex-direction:column;gap:12px}
+.way{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);padding:14px 16px;border-radius:3px;background:var(--surface)}
+.way b{font-weight:700}
+.way span{font-size:.85rem;color:var(--muted)}
+
+/* cff + contact */
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}
+.copy{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.copy code{font-family:var(--mono);font-size:.9rem;background:var(--surface);border:1px solid var(--line);padding:6px 10px;border-radius:3px;user-select:all;overflow-wrap:anywhere}
+.copy button{font:500 .78rem var(--mono);background:transparent;border:1px solid var(--ink);color:var(--ink);padding:6px 10px;border-radius:3px;cursor:pointer}
+
+h2{font-size:var(--step-3)}
+.intro{margin-top:16px;color:var(--muted)}
+footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero,.support,.two{grid-template-columns:minmax(0,1fr)}
+  .cover{max-width:240px;justify-self:start}
+  .voices{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .voice,.voice + .voice{padding:20px 16px 14px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .series{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bar nav{display:none}
+}
+@media (max-width:520px){
+  .grid2,.series,.voices{grid-template-columns:minmax(0,1fr)}
+  .track{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:56px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .map li{transition:transform .2s}
+  .map li:hover{transform:translateX(4px)}
+}
+
+.coverimg{margin:0;justify-self:center;max-width:380px;width:100%}
+.coverimg img{display:block;width:100%;height:auto;border:1px solid var(--line);box-shadow:14px 14px 0 var(--line)}
+.book img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border:1px solid var(--line);margin-bottom:14px;max-width:100%}
+.book .ph{aspect-ratio:3/4;border:1px dashed var(--line);margin-bottom:14px;display:grid;place-items:center;font-family:var(--mono);font-size:.75rem;color:var(--muted);text-align:center;padding:12px}
+.beasts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}
+.beast{margin:0;min-width:0}
+.beast img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top;border:1px solid var(--line)}
+.beast figcaption{margin-top:12px}
+.beast h3{font-size:var(--step-2)}
+.beast p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.memes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px;align-items:start}
+.memes img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+@media (max-width:820px){.memes{grid-template-columns:repeat(2,minmax(0,1fr))}.coverimg{max-width:300px;justify-self:start}.beasts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.beasts,.memes{grid-template-columns:minmax(0,1fr)}}
+</style>
+
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="sig" href="#top">Bothi Nobody</a>
+    <nav aria-label="Secciones">
+      <a href="#libro"><span lang="es">El libro</span><span lang="en">The book</span></a>
+      <a href="#mapa"><span lang="es">El mapa</span><span lang="en">The map</span></a>
+      <a href="#formatos"><span lang="es">Formatos</span><span lang="en">Formats</span></a>
+      <a href="#apoyo"><span lang="es">Apoyar</span><span lang="en">Support</span></a>
+      <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="btn-es" data-set="es" aria-pressed="true">ES</button>
+      <button type="button" id="btn-en" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="hero" id="libro">
+    <div>
+      <span class="ed"><span lang="es">2.ª edición · corregida y aumentada</span><span lang="en">2nd edition · revised and expanded</span></span>
+      <h1><span lang="es">Guías y Palancas</span><span lang="en">Guides &amp; Levers</span></h1>
+      <p class="sub"><span lang="es">Aventuras de un humilde Bodhisattva saboreando a Samsara</span><span lang="en">Adventures of a humble Bodhisattva savoring Samsara</span></p>
+      <p class="lead">
+        <span lang="es">Un audiolibro-juego de rol para cualquiera que carga con sus tengo, sus debo y sus necesito. Cruzas desiertos, montañas y valles, recoges herramientas y, al final, subes al trono de tus propias decisiones. No es para quien ya tiene todo resuelto. Es para choferes, lavacoches, montacarguistas y cualquiera que quiera usar la espada de la claridad.</span>
+        <span lang="en">An audiobook role-playing game for anyone carrying their must-haves, their shoulds and their needs. You cross deserts, mountains and valleys, collect tools along the way, and finally take the throne of your own decisions. It's not for people who have everything figured out. It's for drivers, car washers, forklift operators, and anyone ready to pick up the sword of clarity.</span>
+      </p>
+      <div class="ctas">
+        <a class="btn primary" href="https://www.amazon.com/dp/B0FC7RZ4S4"><span lang="es">Español</span><span lang="en">Español</span></a>
+        <a class="btn primary" href="https://www.amazon.com/dp/B0F6G5YBZC">English</a>
+        <a class="btn" href="#mapa"><span lang="es">Ver el mapa</span><span lang="en">See the map</span></a>
+      </div>
+    </div>
+    <figure class="coverimg">
+      <img src="img/gyp-cover.jpg" width="899" height="1045" alt="Un aventurero de espaldas, hacha en alto, mira el Laberinto entre montañas bajo un sol blanco">
+    </figure>
+  </section>
+
+  <section class="motto" aria-label="Lema">
+    <span class="tag">[[Bothi]]</span>
+    <p><span lang="es">La libertad es <em>sagrada</em>, la responsabilidad <em>absoluta</em>.</span><span lang="en">Freedom is <em>sacred</em>, responsibility is <em>absolute</em>.</span></p>
+  </section>
+
+  <section id="voces">
+    <div class="col">
+      <span class="tag">[[Both I]]</span>
+      <h2><span lang="es">Cuatro voces, un narrador</span><span lang="en">Four voices, one narrator</span></h2>
+      <p class="intro"><span lang="es">El libro te habla en cuatro registros. En el audiolibro de esta edición, cada uno tiene su propia voz.</span><span lang="en">The book speaks to you in four registers. In this edition's audiobook, each one gets its own voice.</span></p>
+    </div>
+    <div class="voices">
+      <div class="voice">
+        <code>[[Bothi]]</code>
+        <h3>Bothi</h3>
+        <p><span lang="es">El guía. Enseña, define, cuenta la leyenda del mapa.</span><span lang="en">The guide. Teaches, defines, tells the lore of the map.</span></p>
+      </div>
+      <div class="voice">
+        <code>[[Buddy]]</code>
+        <h3>Buddy</h3>
+        <p><span lang="es">El compa. Las anécdotas, las deudas, el diario, los comentarios al margen.</span><span lang="en">The buddy. The stories, the debts, the journal, the asides.</span></p>
+      </div>
+      <div class="voice">
+        <code>[[Body]]</code>
+        <h3>Body</h3>
+        <p><span lang="es">El cuerpo. Los ejercicios: detente, siéntelo, escucha lo que te dice.</span><span lang="en">The body. The exercises: stop, feel it, listen to what it says.</span></p>
+      </div>
+      <div class="voice">
+        <code>[[Both I]]</code>
+        <h3>Both I</h3>
+        <p><span lang="es">Tú y yo a la vez. Cuando el lector y el narrador preguntan juntos.</span><span lang="en">You and me at once. When reader and narrator ask together.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <div class="col">
+      <span class="tag">[[Bothi]]</span>
+      <h2><span lang="es">El mapa</span><span lang="en">The map</span></h2>
+      <p class="intro"><span lang="es">Siete territorios, un verbo cada uno. Se recorren en orden.</span><span lang="en">Seven territories, one verb each. You walk them in order.</span></p>
+    </div>
+    <ol class="map col">
+      <li><span class="n">01</span><div><span class="terr"><span lang="es">El Desierto</span><span lang="en">The Desert</span></span><span class="verb"><span lang="es">tengo</span><span lang="en">I must</span></span><p class="d"><span lang="es">Lo que de verdad tienes que tener para sobrevivir.</span><span lang="en">What you truly must have to survive.</span></p></div></li>
+      <li><span class="n">02</span><div><span class="terr"><span lang="es">Las Montañas</span><span lang="en">The Mountains</span></span><span class="verb"><span lang="es">debo</span><span lang="en">I should</span></span><p class="d"><span lang="es">Los deberes que cargas y quién te los puso.</span><span lang="en">The duties you carry and who put them there.</span></p></div></li>
+      <li><span class="n">03</span><div><span class="terr"><span lang="es">El Valle</span><span lang="en">The Valley</span></span><span class="verb"><span lang="es">necesito</span><span lang="en">I need</span></span><p class="d"><span lang="es">Las necesidades, los borregos y Chucho, el antipastor.</span><span lang="en">Needs, the sheep, and Chucho, the anti-shepherd.</span></p></div></li>
+      <li><span class="n">04</span><div><span class="terr"><span lang="es">El Acantilado</span><span lang="en">The Cliff</span></span><span class="verb"><span lang="es">puedo</span><span lang="en">I can</span></span><p class="d"><span lang="es">Con la espada de luz en la mano, lo que sí puedes.</span><span lang="en">Sword of light in hand, what you actually can.</span></p></div></li>
+      <li><span class="n">05</span><div><span class="terr"><span lang="es">El Laberinto</span><span lang="en">The Labyrinth</span></span><span class="verb"><span lang="es">quiero</span><span lang="en">I want</span></span><p class="d"><span lang="es">Los quiero con alas, el Ferrari rojo y los no-quiero.</span><span lang="en">The winged wants, the red Ferrari, and the don't-wants.</span></p></div></li>
+      <li><span class="n">06</span><div><span class="terr"><span lang="es">El Camino</span><span lang="en">The Path</span></span><span class="verb"><span lang="es">elijo</span><span lang="en">I choose</span></span><p class="d"><span lang="es">El arcángel de la elección. Eliges incluso cuando no eliges.</span><span lang="en">The archangel of choice. You choose even when you don't.</span></p></div></li>
+      <li><span class="n">07</span><div><span class="terr"><span lang="es">El Trono</span><span lang="en">The Throne</span></span><span class="verb"><span lang="es">decido</span><span lang="en">I decide</span></span><p class="d"><span lang="es">El Gran Jefe. Las decisiones como guías, no como cadenas.</span><span lang="en">The Big Boss. Decisions as guides, not chains.</span></p></div></li>
+    </ol>
+  </section>
+
+  <section id="formatos">
+    <div class="col">
+      <span class="tag">[[Buddy]]</span>
+      <h2><span lang="es">Cómo leerlo (o escucharlo)</span><span lang="en">How to read it (or hear it)</span></h2>
+    </div>
+    <div class="grid2">
+      <div class="fmt">
+        <span class="status live"><span lang="es">Disponible</span><span lang="en">Available</span></span>
+        <h3>Kindle</h3>
+        <p><span lang="es">En Amazon, una edición en español y otra en inglés.</span><span lang="en">On Amazon, one edition in Spanish and one in English.</span></p>
+        <a class="go" href="https://www.amazon.com/dp/B0FC7RZ4S4">Español →</a>
+        <a class="go" style="margin-top:0" href="https://www.amazon.com/dp/B0F6G5YBZC">English →</a>
+      </div>
+      <div class="fmt">
+        <span class="status soon"><span lang="es">En producción</span><span lang="en">In production</span></span>
+        <h3><span lang="es">Audiolibro</span><span lang="en">Audiobook</span></h3>
+        <p><span lang="es">Narrado a cuatro voces, en inglés y en español. El formato para el que fue escrito.</span><span lang="en">Narrated in four voices, in English and Spanish. The format it was written for.</span></p>
+      </div>
+      <div class="fmt">
+        <span class="status soon"><span lang="es">Próximamente</span><span lang="en">Coming soon</span></span>
+        <h3>EPUB</h3>
+        <p><span lang="es">Para leer en cualquier lector, sin depender de una sola tienda.</span><span lang="en">For any e-reader, without depending on one store.</span></p>
+      </div>
+      <div class="fmt">
+        <span class="status soon"><span lang="es">Próximamente</span><span lang="en">Coming soon</span></span>
+        <h3><span lang="es">Libro impreso</span><span lang="en">Paperback</span></h3>
+        <p><span lang="es">Con códigos QR que te traen de vuelta aquí, al soundtrack.</span><span lang="en">With QR codes that bring you back here, to the soundtrack.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="soundtrack">
+    <div class="col">
+      <span class="tag">[[Buddy]]</span>
+      <h2>Soundtrack</h2>
+      <p class="intro"><span lang="es">Las canciones que el libro cita. El libro enlaza a esta página y no directo a las plataformas, para que los enlaces sigan vivos.</span><span lang="en">The songs the book cites. The book links to this page, not straight to the platforms, so the links stay alive.</span></p>
+    </div>
+    <div class="tracks col">
+      <div class="track"><span class="ch"><span lang="es">Cap. 5</span><span lang="en">Ch. 5</span></span><div><div class="t">Bell</div><div class="by">Stuart Davis · 2003</div></div><a href="https://stuartdavis.com">stuartdavis.com</a></div>
+      <div class="track"><span class="ch"><span lang="es">Cap. 5</span><span lang="en">Ch. 5</span></span><div><div class="t">Savoring Samsara</div><div class="by">Stuart Davis · <em>Stuart Davis</em>, 2001</div></div><a href="https://stuartdavis.com">stuartdavis.com</a></div>
+    </div>
+  </section>
+
+  <section id="saga">
+    <div class="col">
+      <span class="tag">[[Bothi]]</span>
+      <h2><span lang="es">La aventura continúa</span><span lang="en">The adventure continues</span></h2>
+    </div>
+    <div class="series">
+      <div class="book here">
+        <img src="img/gyp-cover.jpg" alt="" loading="lazy">
+        <div class="p"><span lang="es">Parte 1 · aquí estás</span><span lang="en">Part 1 · you are here</span></div>
+        <h3><span lang="es">Guías y Palancas</span><span lang="en">Guides &amp; Levers</span></h3>
+        <p><span lang="es">Un safari en solitario por tus tengo, debo, necesito y quiero.</span><span lang="en">A solo safari through your musts, shoulds, needs and wants.</span></p>
+      </div>
+      <div class="book">
+        <img src="img/mdm-cover.jpg" alt="" loading="lazy">
+        <div class="p"><span lang="es">Parte 2 · en escritura</span><span lang="en">Part 2 · being written</span></div>
+        <h3><span lang="es">El Mensaje Detrás del Mensaje</span><span lang="en">The Message Behind the Message</span></h3>
+        <p><span lang="es">Ahora es una partida. Golems, vampiros y la Pradera de las Ideas Absurdas. Solo para valientes.</span><span lang="en">Now it's a party. Golems, vampires and the Meadow of Absurd Ideas. For the brave only.</span></p>
+      </div>
+      <div class="book">
+        <img src="img/karmagedon.jpg" alt="" loading="lazy">
+        <div class="p"><span lang="es">Parte 2.5 · en escritura</span><span lang="en">Part 2.5 · being written</span></div>
+        <h3>Karmagedon</h3>
+        <p><span lang="es">Consecuencias y el nuevo mundo. Un álbum, una novela, un sofón llamado Zhizi.</span><span lang="en">Consequences and the new world. An album, a novel, a sophon named Zhizi.</span></p>
+      </div>
+      <div class="book">
+        <div class="ph"><span lang="es">Portada pendiente</span><span lang="en">Cover coming</span></div>
+        <div class="p"><span lang="es">Parte 3 · semilla</span><span lang="en">Part 3 · seed</span></div>
+        <h3><span lang="es">Escapando de Nunca Jamás</span><span lang="en">Escaping Neverland</span></h3>
+        <p><span lang="es">"Seré feliz cuando…" El país donde todos están y nadie puede estar.</span><span lang="en">"I'll be happy when…" The country everyone is in and no one can be.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bestiario">
+    <div class="col">
+      <span class="tag">[[Bothi]]</span>
+      <h2><span lang="es">Bestiario de MDM</span><span lang="en">The MDM bestiary</span></h2>
+      <p class="intro"><span lang="es">Lo que te espera en el segundo libro. Ninguno sabe que es un monstruo.</span><span lang="en">What waits for you in the second book. None of them know they're monsters.</span></p>
+    </div>
+    <div class="beasts">
+      <figure class="beast"><img src="img/vampiro.jpg" alt="Un vampiro abraza un montón de monedas de oro" loading="lazy"><figcaption><h3><span lang="es">El Vampiro</span><span lang="en">The Vampire</span></h3><p><span lang="es">Se beneficia sin pagar consecuencias. A veces a propósito, a veces por inercia.</span><span lang="en">Profits without paying consequences. Sometimes on purpose, sometimes by inertia.</span></p></figcaption></figure>
+      <figure class="beast"><img src="img/golem.jpg" alt="Un gólem de traje sostiene de cabeza a un zombi sobre una pila de oro" loading="lazy"><figcaption><h3><span lang="es">El Gólem</span><span lang="en">The Golem</span></h3><p><span lang="es">Empresa, gobierno, ideología: un ente sin alma animado por un papel y un rito legal.</span><span lang="en">Company, government, ideology: a soulless thing animated by a role and a legal rite.</span></p></figcaption></figure>
+      <figure class="beast"><img src="img/zombis.jpg" alt="Una fila de zombis frente a pantallas, el primero abraza monedas de oro" loading="lazy"><figcaption><h3><span lang="es">Los Zombis</span><span lang="en">The Zombies</span></h3><p><span lang="es">Repiten la narrativa de la pantalla y reaccionan cuando se les cae.</span><span lang="en">They repeat the story on the screen and lash out when it falls apart.</span></p></figcaption></figure>
+    </div>
+  </section>
+
+  <section id="memes">
+    <div class="col">
+      <span class="tag">[[Buddy]]</span>
+      <h2>Memes</h2>
+      <p class="intro"><span lang="es">Para compartir con quien siga atorado en el desierto.</span><span lang="en">To share with anyone still stuck in the desert.</span></p>
+    </div>
+    <div class="memes">
+      <img src="img/elige-tu-aventura.jpg" width="700" height="700" alt="Elige tu aventura: La cruzada por el gatito sagrado, Atrapando al gallo dorado, Encontrar al Gran Jefe" loading="lazy">
+      <img src="img/riding-the-can.jpg" width="700" height="1050" alt="Bothi con su hacha dorada monta un caballito alado al borde de un acantilado: Riding the Can" loading="lazy">
+      <img src="img/best-questions.jpg" width="700" height="1050" alt="Bothi se encoge de hombros entre borregos: I don't have the answer, what I have is the best questions" loading="lazy">
+    </div>
+  </section>
+
+  <section id="apoyo">
+    <span class="tag">[[Buddy]]</span>
+    <h2><span lang="es">Apoya la aventura</span><span lang="en">Support the adventure</span></h2>
+    <div class="support">
+      <div class="lists col">
+        <p class="intro"><span lang="es">Escribo entre viajes de Uber, turnos de reparto y autos por lavar. No necesito el pescado. Una buena caña de pescar sí ayuda.</span><span lang="en">I write between Uber rides, delivery shifts and cars to wash. I don't need the fish. A good fishing pole does help.</span></p>
+        <h4><span lang="es">Quiero</span><span lang="en">Wants</span></h4>
+        <ul>
+          <li><span lang="es">Un agente literario y una editorial con agallas</span><span lang="en">A literary agent and a kick-ass publisher</span></li>
+          <li><span lang="es">Terminar el audiolibro</span><span lang="en">Finish the audiobook</span></li>
+          <li><span lang="es">Escribir y enseñar de tiempo completo</span><span lang="en">Write and teach full time</span></li>
+        </ul>
+        <h4><span lang="es">Elijo</span><span lang="en">I choose</span></h4>
+        <p style="color:var(--muted)"><span lang="es">Cada día, cada momento: la libertad de escribir y enseñar mientras cuido a mis hijos.</span><span lang="en">Every day, every moment: the liberty to write and teach while taking care of my kids.</span></p>
+      </div>
+      <div class="ways">
+        <div class="way"><div><b><span lang="es">Compra el libro</span><span lang="en">Buy the book</span></b><br><span lang="es">La forma más directa</span><span lang="en">The most direct way</span></div><a href="https://www.amazon.com/dp/B0FC7RZ4S4" data-amz>Amazon →</a></div>
+        <div class="way"><div><b><span lang="es">Déjale una reseña</span><span lang="en">Leave a review</span></b><br><span lang="es">Gratis y mueve el algoritmo</span><span lang="en">Free, and it moves the algorithm</span></div><a href="https://www.amazon.com/dp/B0FC7RZ4S4" data-amz>Amazon →</a></div>
+        <div class="way"><div><b>Buy Me a Coffee</b><br><span lang="es">Un café por capítulo</span><span lang="en">A coffee per chapter</span></div><span class="status soon"><span lang="es">Pronto</span><span lang="en">Soon</span></span></div>
+        <div class="way"><div><b>Patreon</b><br><span lang="es">Acompaña la escritura de MDM</span><span lang="en">Follow MDM as it's written</span></div><span class="status soon"><span lang="es">Pronto</span><span lang="en">Soon</span></span></div>
+        <div class="way"><div><b><span lang="es">Compártelo</span><span lang="en">Share it</span></b><br><span lang="es">Con quien esté atorado en el desierto</span><span lang="en">With someone stuck in the desert</span></div><button type="button" id="share" class="status live" style="background:transparent;cursor:pointer;font-family:var(--mono)"><span lang="es">Copiar enlace</span><span lang="en">Copy link</span></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="two">
+      <div class="col">
+        <span class="tag">[[Bothi]]</span>
+        <h2>Cognitive Friction Fellowship</h2>
+        <p class="intro"><span lang="es">La parte académica del proyecto: papers sobre decisión, sesgo y agencia, escritos entre un humano y una tribu de IAs. Fricción intelectual antes que halagos.</span><span lang="en">The academic side of the project: working papers on decision, bias and agency, written by one human with a tribe of AIs. Intellectual friction over flattery.</span></p>
+        <p style="margin-top:16px"><a href="https://bothinobody.substack.com">bothinobody.substack.com →</a></p>
+      </div>
+      <div class="col">
+        <span class="tag">[[Buddy]]</span>
+        <h2><span lang="es">Escríbeme</span><span lang="en">Write to me</span></h2>
+        <p class="intro"><span lang="es">Desde Houston, Texas. Lectores, editoriales, agentes y aventureros perdidos.</span><span lang="en">From Houston, Texas. Readers, publishers, agents and lost adventurers.</span></p>
+        <div class="copy">
+          <code id="mail">cuantic.coach@gmail.com</code>
+          <button type="button" id="copymail"><span lang="es">Copiar</span><span lang="en">Copy</span></button>
+        </div>
+        <p style="margin-top:14px"><a href="https://www.facebook.com/profile.php?id=61563876501345">Facebook →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Bothi Nobody · Rodrigo Flores Morton</span>
+    <span><span lang="es">"No soy el Buda, solo lo interpreto."</span><span lang="en">"I'm not the Buddha, I just play one."</span></span>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    root.setAttribute('lang',l);
+    document.getElementById('btn-es').setAttribute('aria-pressed',l==='es');
+    document.getElementById('btn-en').setAttribute('aria-pressed',l==='en');
+    document.querySelectorAll('[data-amz]').forEach(function(a){a.href=l==='en'?'https://www.amazon.com/dp/B0F6G5YBZC':'https://www.amazon.com/dp/B0FC7RZ4S4'});
+    try{localStorage.setItem('bothi-lang',l)}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('bothi-lang')}catch(e){}
+  setLang(saved==='en'?'en':'es');
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+  function copy(text,btn){
+    var done=function(){var o=btn.innerHTML;btn.textContent=root.dataset.lang==='en'?'Copied':'Copiado';setTimeout(function(){btn.innerHTML=o},1600)};
+    try{navigator.clipboard.writeText(text).then(done,function(){sel()})}catch(e){sel()}
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  }
+  document.getElementById('copymail').addEventListener('click',function(){copy('cuantic.coach@gmail.com',this)});
+  document.getElementById('share').addEventListener('click',function(){copy(location.href.split('#')[0],this)});
+})();
+</script>
+
+</body>
+</html>
