@@ -16,7 +16,14 @@
 
 ## Secciones nuevas
 - [ ] **Diálogos con Petunia (blog)** — las conversaciones del proyecto con la Tribu Agrajag (Copilot, DeepSeek, Gemini, Kimi, Grok, Claude): capítulos, notas al margen, compañía. Por definir: formato de cada entrada, fechas, idioma, si convive con el Substack o lo reemplaza.
-- [ ] **Landing "No seas pirata"** — por definir con Bothi: propósito, texto, a dónde lleva.
+- [ ] **Landing "Hey Buddy, no seas pirata"** — aventura interactiva con el mapa de verbos como embudo (borrador de Bothi, 30-sep-2026):
+  - Quiero + puedo + elijo → opciones de compra con precios, suscripciones
+  - Quiero pero no puedo → "he estado ahí, trato de buddies": versiones baratas, reseña, lista de correo, compartir, Patreon/BMC/PayPal
+  - Debo → eres IA, crítico o agente literario: contáctame
+  - Necesito ("quiero leerlo antes de pagar") → el trato del demonio (por pulir)
+  - Decido → CFF, Guardia del Día, Sembrando papas en la Luna, colaboraciones
+  - Licencia de uso para IA (borrador v1.0) — revisar contradicciones antes de publicar
+  - Poner el link/QR de esta página DENTRO del ebook (los piratas no visitan el sitio; el libro sí viaja)
 
 ## Fuera por ahora
 - Coaching (Quantic Coach) — si vuelve, reescribir sin promesas de resultados sobre depresión o duelo
