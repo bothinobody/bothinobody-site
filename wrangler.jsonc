@@ -1,0 +1,9 @@
+{
+  // Sitio estático: Cloudflare sirve index.html e img/ tal cual, sin código.
+  "name": "bothinobody-site",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
