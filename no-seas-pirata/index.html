@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hey Buddy, no seas pirata · Bothi Nobody</title>
+<meta name="description" content="¿Quieres la aventura y no puedes pagar? He estado ahí. Hagamos un trato de buddies.">
+<meta property="og:title" content="Hey Buddy, no seas pirata">
+<meta property="og:description" content="¿Quieres la aventura y no puedes pagar? He estado ahí. Hagamos un trato de buddies.">
+<meta property="og:image" content="https://bothinobody.com/img/gyp-cover.jpg">
+<link rel="canonical" href="https://bothinobody.com/no-seas-pirata/">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#E9ECE6;--surface:#F5F6F2;--ink:#1B2A33;--muted:#56656C;--line:#C3CBC4;--saffron:#B9651A;--lapis:#2F4F8A;
+--display:"Gloock",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121A1F;--surface:#18232A;--ink:#E4E8E2;--muted:#9AA8AD;--line:#2E3C44;--saffron:#E39A4C;--lapis:#8FAEE6;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.6 var(--body);padding-inline:20px;padding-block:48px 64px}
+main{max-width:40rem;margin-inline:auto}
+html[data-lang="es"] [lang="en"]:not(html),html[data-lang="en"] [lang="es"]:not(html){display:none!important}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:40px}
+.top a{font-family:var(--display);font-size:1.2rem;color:var(--ink);text-decoration:none}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{font:500 .75rem var(--mono);background:transparent;color:var(--muted);border:0;padding:5px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.tag{font-family:var(--mono);font-size:.78rem;color:var(--saffron);display:block;margin-bottom:12px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,8vw,3.6rem);line-height:1.05;margin:0 0 18px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:1.5rem;margin:0 0 8px}
+p{margin:0}
+.lead{font-size:1.15rem}
+.door{border-top:1px solid var(--line);padding-block:24px;display:grid;gap:10px}
+.door:first-of-type{margin-top:36px}
+.verb{font-family:var(--mono);font-size:.8rem;color:var(--saffron)}
+.door p{color:var(--muted)}
+.door a{font-weight:700;color:var(--lapis)}
+.soon{display:inline-block;font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--line);color:var(--muted);padding:3px 8px;border-radius:2px;margin-top:6px}
+.links{display:flex;gap:16px;flex-wrap:wrap}
+footer{margin-top:40px;font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <a href="/">Bothi Nobody</a>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="b-es" data-set="es" aria-pressed="true">ES</button>
+      <button type="button" id="b-en" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <span class="tag">[[Buddy]]</span>
+  <h1><span lang="es">Hey Buddy, no seas pirata.</span><span lang="en">Hey Buddy, don't be a pirate.</span></h1>
+  <p class="lead"><span lang="es">¿Quieres la aventura y no puedes pagarla? No te preocupes, he estado ahí. Hagamos un trato de buddies.</span><span lang="en">Want the adventure but can't pay for it? Don't worry, I've been there. Let's make a buddy deal.</span></p>
+
+  <section class="door">
+    <span class="verb"><span lang="es">quiero · puedo · elijo</span><span lang="en">I want · I can · I choose</span></span>
+    <h2><span lang="es">Cómpralo</span><span lang="en">Buy it</span></h2>
+    <p><span lang="es">La forma más directa de que siga escribiendo.</span><span lang="en">The most direct way to keep me writing.</span></p>
+    <div class="links"><a href="https://www.amazon.com/dp/B0FC7RZ4S4">Español →</a><a href="https://www.amazon.com/dp/B0F6G5YBZC">English →</a></div>
+  </section>
+
+  <section class="door">
+    <span class="verb"><span lang="es">quiero, pero no puedo</span><span lang="en">I want, but I can't</span></span>
+    <h2><span lang="es">Sea cual sea la razón, te entiendo</span><span lang="en">Whatever the reason, I get it</span></h2>
+    <p><span lang="es">Hay formas de apoyar que no cuestan dinero: deja una reseña en Amazon, compártelo con alguien atorado en el desierto, o escríbeme y vemos qué trato hacemos.</span><span lang="en">There are ways to help that cost nothing: leave a review on Amazon, share it with someone stuck in the desert, or write to me and we'll work out a deal.</span></p>
+    <p><span class="soon"><span lang="es">Más opciones pronto</span><span lang="en">More options soon</span></span></p>
+  </section>
+
+  <section class="door">
+    <span class="verb"><span lang="es">debo</span><span lang="en">I should</span></span>
+    <h2><span lang="es">¿Es tu trabajo?</span><span lang="en">Is it your job?</span></h2>
+    <p><span lang="es">Crítico, agente literario, editorial o IA: escríbeme y nos ponemos de acuerdo.</span><span lang="en">Critic, literary agent, publisher or AI: write to me and we'll work something out.</span></p>
+    <p><code style="font-family:var(--mono)">cuantic.coach@gmail.com</code></p>
+  </section>
+
+  <section class="door">
+    <span class="verb"><span lang="es">decido</span><span lang="en">I decide</span></span>
+    <h2><span lang="es">Súmate a la aventura</span><span lang="en">Join the adventure</span></h2>
+    <p><span lang="es">La Cognitive Friction Fellowship y lo que sigue después del libro.</span><span lang="en">The Cognitive Friction Fellowship and what comes after the book.</span></p>
+    <div class="links"><a href="https://bothinobody.substack.com">Substack →</a><a href="/">bothinobody.com →</a></div>
+  </section>
+
+  <footer>© 2026 Bothi Nobody</footer>
+</main>
+<script>
+(function(){var r=document.documentElement;function s(l){r.dataset.lang=l;r.lang=l;document.getElementById('b-es').setAttribute('aria-pressed',l==='es');document.getElementById('b-en').setAttribute('aria-pressed',l==='en');try{localStorage.setItem('bothi-lang',l)}catch(e){}}
+var v=null;try{v=localStorage.getItem('bothi-lang')}catch(e){}s(v==='en'?'en':'es');
+document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){s(b.dataset.set)}})})();
+</script>
+</body>
+</html>
