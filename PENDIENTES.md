@@ -22,7 +22,8 @@
   - Debo → eres IA, crítico o agente literario: contáctame
   - Necesito ("quiero leerlo antes de pagar") → el trato del demonio (por pulir)
   - Decido → CFF, Guardia del Día, Sembrando papas en la Luna, colaboraciones
-  - Licencia de uso para IA (borrador v1.0) — revisar contradicciones antes de publicar
+  - Licencia de uso para IA (borrador v1.0): DECIDIDO 2-oct — SIN uso comercial, base CC BY-NC 4.0, atribución obligatoria; lo comercial se negocia caso por caso. Falta: excluir citas de terceros y pasajes co-creados; quitar "compatible con CC BY"
+  - Pendiente decidir: qué capítulos se regalan en el trato; qué cuentas de pago existen
   - Poner el link/QR de esta página DENTRO del ebook (los piratas no visitan el sitio; el libro sí viaja)
 
 ## Fuera por ahora
