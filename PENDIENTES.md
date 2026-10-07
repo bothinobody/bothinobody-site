@@ -9,7 +9,7 @@
 ## Contenido
 - [ ] Edición del texto del sitio con Bothi
 - [ ] Links de Buy Me a Coffee y Patreon (hoy dicen "Pronto")
-- [ ] ASIN nuevos cuando salga la 2.ª edición (libro nuevo en KDP, firmado Bothi Nobody)
+- [ ] ASIN de la 2.ª edición (Kindle publicado 7-oct, en revisión): UN solo ASIN con "Elige tu idioma" → los dos botones de Amazon se vuelven uno. Fuera de KDP Select y sin DRM → sí se puede vender/regalar ebook en el sitio
 - [ ] Memes corregidos: "I"m not the Buddha", "bodhisatt", "bodhitva", Bodhisattva con B mayúscula
 - [ ] Portada de Escapando de Nunca Jamás
 - [ ] "Elige tu aventura" como puerta de entrada: gatito sagrado / gallo dorado → glosario bilingüe (el doble sentido, en insinuación) → MDM; Gran Jefe → el mapa
