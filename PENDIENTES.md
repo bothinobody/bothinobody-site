@@ -1,7 +1,7 @@
 # Pendientes — bothinobody.com
 
 ## Técnico
-- [ ] `www.bothinobody.com`: agregarlo al Worker, o registro AAAA `www` → `100::` (proxied) + Redirect Rule "WWW to root"
+- [x] `www.bothinobody.com` → redirige a bothinobody.com (AAAA www → 100:: proxied + Redirect Rule "WWW to root") — confirmado 7-oct
 - [ ] Correo `hola@bothinobody.com` → Gmail (Cloudflare Email Routing) + "Enviar como" en Gmail
 - [ ] Aviso en suportbothi.weebly.com que mande a bothinobody.com (o apagarla)
 - [ ] Revisar el sitio en vivo: imágenes, ES/EN, links de Amazon, vista previa al compartir
