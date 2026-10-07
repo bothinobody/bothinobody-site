@@ -187,6 +187,14 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
 .memes img{display:block;width:100%;height:auto;border:1px solid var(--line)}
 @media (max-width:820px){.memes{grid-template-columns:repeat(2,minmax(0,1fr))}.coverimg{max-width:300px;justify-self:start}.beasts{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:520px){.beasts,.memes{grid-template-columns:minmax(0,1fr)}}
+.posts{list-style:none;padding:0;margin:28px 0 0;border-top:1px solid var(--line)}
+.posts li{padding-block:18px;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.posts time{font-family:var(--mono);font-size:.76rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.posts a{font-family:var(--display);font-size:var(--step-1);color:var(--ink);text-decoration:none;line-height:1.2}
+.posts a:hover{color:var(--lapis)}
+.posts p{color:var(--muted);font-size:.95rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.subbox{margin-top:8px;max-width:480px}
+.subbox iframe{display:block;width:100%;height:320px;border:1px solid var(--line);border-radius:3px;background:#fff}
 </style>
 
 </head>
@@ -198,6 +206,7 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
       <a href="#libro"><span lang="es">El libro</span><span lang="en">The book</span></a>
       <a href="#mapa"><span lang="es">El mapa</span><span lang="en">The map</span></a>
       <a href="#formatos"><span lang="es">Formatos</span><span lang="en">Formats</span></a>
+      <a href="#substack">Substack</a>
       <a href="#apoyo"><span lang="es">Apoyar</span><span lang="en">Support</span></a>
       <a href="#contacto"><span lang="es">Contacto</span><span lang="en">Contact</span></a>
     </nav>
@@ -410,6 +419,27 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
     </div>
   </section>
 
+  <section id="substack">
+    <div class="two">
+      <div class="col">
+        <span class="tag">[[Bothi]]</span>
+        <h2><span lang="es">Lo último del cuaderno</span><span lang="en">Latest from the notebook</span></h2>
+        <p class="intro"><span lang="es">Papers, notas y diálogos con la Tribu, publicados en Substack.</span><span lang="en">Papers, notes and dialogues with the Tribe, published on Substack.</span></p>
+        <ul class="posts" id="posts">
+          <li><time>06 sep 2026</time><a href="https://bothinobody.substack.com">El Hipopótamo y el Abogado: Una Arquitectura Cuántica de Posibilidad y Colapso Narrativo</a></li>
+          <li><time>21 jul 2026</time><a href="https://bothinobody.substack.com">Sembrando Papas en Granjas con Paneles Solares en la Luna</a></li>
+        </ul>
+        <p style="margin-top:16px"><a href="https://bothinobody.substack.com"><span lang="es">Ver todo en Substack →</span><span lang="en">See everything on Substack →</span></a></p>
+      </div>
+      <div class="col">
+        <span class="tag">[[Buddy]]</span>
+        <h2><span lang="es">Suscríbete</span><span lang="en">Subscribe</span></h2>
+        <p class="intro"><span lang="es">Te llega cada publicación nueva a tu correo. Gratis.</span><span lang="en">Every new post straight to your inbox. Free.</span></p>
+        <div class="subbox"><iframe src="https://bothinobody.substack.com/embed" title="Suscripción a Bothi Nobody en Substack" loading="lazy" scrolling="no"></iframe></div>
+      </div>
+    </div>
+  </section>
+
   <section id="contacto">
     <div class="two">
       <div class="col">
@@ -461,5 +491,25 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
 })();
 </script>
 
+<script>
+(function(){
+  var ul=document.getElementById('posts'); if(!ul||!window.fetch) return;
+  function txt(h){var d=new DOMParser().parseFromString('<p>'+h+'</p>','text/html');return (d.body.textContent||'').trim();}
+  fetch('/api/substack').then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d||!d.posts||!d.posts.length) return;
+    var lang=document.documentElement.dataset.lang==='en'?'en-US':'es-MX';
+    ul.innerHTML='';
+    d.posts.forEach(function(p){
+      var li=document.createElement('li');
+      var t=document.createElement('time'); var dt=new Date(p.date);
+      if(!isNaN(dt)){t.dateTime=dt.toISOString();t.textContent=dt.toLocaleDateString(lang,{day:'2-digit',month:'short',year:'numeric'});}
+      var a=document.createElement('a'); a.href=p.link; a.textContent=txt(p.title);
+      li.appendChild(t); li.appendChild(a);
+      var ds=txt(p.description); if(ds){var pp=document.createElement('p');pp.textContent=ds;li.appendChild(pp);}
+      ul.appendChild(li);
+    });
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>

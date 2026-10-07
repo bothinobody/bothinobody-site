@@ -15,7 +15,8 @@
 - [ ] "Elige tu aventura" como puerta de entrada: gatito sagrado / gallo dorado → glosario bilingüe (el doble sentido, en insinuación) → MDM; Gran Jefe → el mapa
 
 ## Secciones nuevas
-- [ ] **Diálogos con Petunia (blog)** — las conversaciones del proyecto con la Tribu Agrajag (Copilot, DeepSeek, Gemini, Kimi, Grok, Claude): capítulos, notas al margen, compañía. Por definir: formato de cada entrada, fechas, idioma, si convive con el Substack o lo reemplaza.
+- [x] **Substack en el sitio** (7-oct): sección "Lo último del cuaderno" (se actualiza sola vía /api/substack en worker.js) + formulario de suscripción embebido
+- [ ] **Diálogos con Petunia (blog)** — las conversaciones del proyecto con la Tribu Agrajag (Copilot, DeepSeek, Gemini, Kimi, Grok, Claude): capítulos, notas al margen, compañía. Propuesta: que viva en Substack y aparezca sola en el sitio. Por definir: formato de cada entrada, fechas, idioma.
 - [ ] **Landing "Hey Buddy, no seas pirata"** — aventura interactiva con el mapa de verbos como embudo (borrador de Bothi, 30-sep-2026):
   - Quiero + puedo + elijo → opciones de compra con precios, suscripciones
   - Quiero pero no puedo → "he estado ahí, trato de buddies": versiones baratas, reseña, lista de correo, compartir, Patreon/BMC/PayPal

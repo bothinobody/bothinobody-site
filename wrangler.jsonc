@@ -1,9 +1,12 @@
 {
-  // Sitio estático: Cloudflare sirve index.html e img/ tal cual, sin código.
+  // Sitio estático + una ruta dinámica (/api/substack) en worker.js.
   "name": "bothinobody-site",
   "compatibility_date": "2026-09-01",
+  "main": "worker.js",
   "assets": {
     "directory": "./",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
   }
 }

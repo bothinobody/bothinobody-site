@@ -3,3 +3,5 @@ wrangler.jsonc
 .assetsignore
 .git
 PENDIENTES.md
+worker.js
+robots.txt.bak
