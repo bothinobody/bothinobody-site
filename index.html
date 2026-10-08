@@ -453,7 +453,7 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
         <h2><span lang="es">Escríbeme</span><span lang="en">Write to me</span></h2>
         <p class="intro"><span lang="es">Desde Houston, Texas. Lectores, editoriales, agentes y aventureros perdidos.</span><span lang="en">From Houston, Texas. Readers, publishers, agents and lost adventurers.</span></p>
         <div class="copy">
-          <code id="mail">cuantic.coach@gmail.com</code>
+          <code id="mail" data-u="hcaoc.citnauc" data-d="moc.liamg"><span lang="es">activa JavaScript para ver el correo</span><span lang="en">enable JavaScript to see the email</span></code><script>document.querySelectorAll('[data-u]').forEach(function(e){e.textContent=e.dataset.u.split('').reverse().join('')+'@'+e.dataset.d.split('').reverse().join('')})</script>
           <button type="button" id="copymail"><span lang="es">Copiar</span><span lang="en">Copy</span></button>
         </div>
         <p style="margin-top:14px"><a href="https://www.facebook.com/profile.php?id=61563876501345">Facebook →</a></p>
@@ -486,7 +486,7 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
     try{navigator.clipboard.writeText(text).then(done,function(){sel()})}catch(e){sel()}
     function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
   }
-  document.getElementById('copymail').addEventListener('click',function(){copy('cuantic.coach@gmail.com',this)});
+  document.getElementById('copymail').addEventListener('click',function(){copy(document.getElementById('mail').textContent,this)});
   document.getElementById('share').addEventListener('click',function(){copy(location.href.split('#')[0],this)});
 })();
 </script>
