@@ -230,8 +230,7 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
         <span lang="en">An audiobook role-playing game for anyone carrying their must-haves, their shoulds and their needs. You cross deserts, mountains and valleys, collect tools along the way, and finally take the throne of your own decisions. It's not for people who have everything figured out. It's for drivers, car washers, forklift operators, and anyone ready to pick up the sword of clarity.</span>
       </p>
       <div class="ctas">
-        <a class="btn primary" href="https://www.amazon.com/dp/B0FC7RZ4S4"><span lang="es">Español</span><span lang="en">Español</span></a>
-        <a class="btn primary" href="https://www.amazon.com/dp/B0F6G5YBZC">English</a>
+        <a class="btn primary" href="https://www.amazon.com/dp/B0HMC8RRY8"><span lang="es">Cómpralo en Kindle</span><span lang="en">Get it on Kindle</span></a>
         <a class="btn" href="#mapa"><span lang="es">Ver el mapa</span><span lang="en">See the map</span></a>
       </div>
     </div>
@@ -301,9 +300,8 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
       <div class="fmt">
         <span class="status live"><span lang="es">Disponible</span><span lang="en">Available</span></span>
         <h3>Kindle</h3>
-        <p><span lang="es">En Amazon, una edición en español y otra en inglés.</span><span lang="en">On Amazon, one edition in Spanish and one in English.</span></p>
-        <a class="go" href="https://www.amazon.com/dp/B0FC7RZ4S4">Español →</a>
-        <a class="go" style="margin-top:0" href="https://www.amazon.com/dp/B0F6G5YBZC">English →</a>
+        <p><span lang="es">2.ª edición: un solo libro con los dos idiomas completos. Eliges español o inglés al abrirlo. Sin DRM.</span><span lang="en">2nd edition: one book with both languages complete. Pick Spanish or English when you open it. DRM-free.</span></p>
+        <a class="go" href="https://www.amazon.com/dp/B0HMC8RRY8"><span lang="es">Ir a Amazon →</span><span lang="en">Go to Amazon →</span></a>
       </div>
       <div class="fmt">
         <span class="status soon"><span lang="es">En producción</span><span lang="en">In production</span></span>
@@ -410,8 +408,8 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
         <p style="color:var(--muted)"><span lang="es">Cada día, cada momento: la libertad de escribir y enseñar mientras cuido a mis hijos.</span><span lang="en">Every day, every moment: the liberty to write and teach while taking care of my kids.</span></p>
       </div>
       <div class="ways">
-        <div class="way"><div><b><span lang="es">Compra el libro</span><span lang="en">Buy the book</span></b><br><span lang="es">La forma más directa</span><span lang="en">The most direct way</span></div><a href="https://www.amazon.com/dp/B0FC7RZ4S4" data-amz>Amazon →</a></div>
-        <div class="way"><div><b><span lang="es">Déjale una reseña</span><span lang="en">Leave a review</span></b><br><span lang="es">Gratis y mueve el algoritmo</span><span lang="en">Free, and it moves the algorithm</span></div><a href="https://www.amazon.com/dp/B0FC7RZ4S4" data-amz>Amazon →</a></div>
+        <div class="way"><div><b><span lang="es">Compra el libro</span><span lang="en">Buy the book</span></b><br><span lang="es">La forma más directa</span><span lang="en">The most direct way</span></div><a href="https://www.amazon.com/dp/B0HMC8RRY8">Amazon →</a></div>
+        <div class="way"><div><b><span lang="es">Déjale una reseña</span><span lang="en">Leave a review</span></b><br><span lang="es">Gratis y mueve el algoritmo</span><span lang="en">Free, and it moves the algorithm</span></div><a href="https://www.amazon.com/dp/B0HMC8RRY8">Amazon →</a></div>
         <div class="way"><div><b>Buy Me a Coffee</b><br><span lang="es">Un café por capítulo</span><span lang="en">A coffee per chapter</span></div><span class="status soon"><span lang="es">Pronto</span><span lang="en">Soon</span></span></div>
         <div class="way"><div><b>Patreon</b><br><span lang="es">Acompaña la escritura de MDM</span><span lang="en">Follow MDM as it's written</span></div><span class="status soon"><span lang="es">Pronto</span><span lang="en">Soon</span></span></div>
         <div class="way"><div><b><span lang="es">Compártelo</span><span lang="en">Share it</span></b><br><span lang="es">Con quien esté atorado en el desierto</span><span lang="en">With someone stuck in the desert</span></div><button type="button" id="share" class="status live" style="background:transparent;cursor:pointer;font-family:var(--mono)"><span lang="es">Copiar enlace</span><span lang="en">Copy link</span></button></div>
@@ -475,7 +473,6 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
     root.setAttribute('lang',l);
     document.getElementById('btn-es').setAttribute('aria-pressed',l==='es');
     document.getElementById('btn-en').setAttribute('aria-pressed',l==='en');
-    document.querySelectorAll('[data-amz]').forEach(function(a){a.href=l==='en'?'https://www.amazon.com/dp/B0F6G5YBZC':'https://www.amazon.com/dp/B0FC7RZ4S4'});
     try{localStorage.setItem('bothi-lang',l)}catch(e){}
   }
   var saved=null; try{saved=localStorage.getItem('bothi-lang')}catch(e){}

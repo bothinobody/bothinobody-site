@@ -7,9 +7,13 @@
 - [ ] Revisar el sitio en vivo: imágenes, ES/EN, links de Amazon, vista previa al compartir
 
 ## Contenido
+- [ ] Amazon Author Central como Bothi Nobody: reclamar 2.ª ed + las dos de la 1.ª, bio y link a bothinobody.com
+- [ ] Unir 2.ª ed y 1.ª ed en la misma serie (AHBSS) en Amazon
+- [ ] Revisar ficha de Amazon: sale como "Spanish Edition" y en "Politics & Social Sciences"
 - [ ] Edición del texto del sitio con Bothi
 - [ ] Links de Buy Me a Coffee y Patreon (hoy dicen "Pronto")
-- [ ] ASIN de la 2.ª edición (Kindle publicado 7-oct, en revisión): UN solo ASIN con "Elige tu idioma" → los dos botones de Amazon se vuelven uno. Fuera de KDP Select y sin DRM → sí se puede vender/regalar ebook en el sitio
+- [x] ASIN de la 2.ª edición: B0HMC8RRY8 (en vivo 9-oct, sitio actualizado)
+- [ ] (nota anterior) ASIN de la 2.ª edición (Kindle publicado 7-oct, en revisión): UN solo ASIN con "Elige tu idioma" → los dos botones de Amazon se vuelven uno. Fuera de KDP Select y sin DRM → sí se puede vender/regalar ebook en el sitio
 - [ ] Memes corregidos: "I"m not the Buddha", "bodhisatt", "bodhitva", Bodhisattva con B mayúscula
 - [ ] Portada de Escapando de Nunca Jamás
 - [ ] "Elige tu aventura" como puerta de entrada: gatito sagrado / gallo dorado → glosario bilingüe (el doble sentido, en insinuación) → MDM; Gran Jefe → el mapa
