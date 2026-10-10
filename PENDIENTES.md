@@ -28,7 +28,8 @@
   - Necesito ("quiero leerlo antes de pagar") → el trato del demonio (por pulir)
   - Decido → CFF, Guardia del Día, Sembrando papas en la Luna, colaboraciones
   - Licencia de uso para IA (borrador v1.0): DECIDIDO 2-oct — SIN uso comercial, base CC BY-NC 4.0, atribución obligatoria; lo comercial se negocia caso por caso. Falta: excluir citas de terceros y pasajes co-creados; quitar "compatible con CC BY"
-  - DECIDIDO 10-oct: el trato regala Prefacio + Cap. 1 y 2 (Introducción y Templo). Fuera de KDP Select y sin DRM → permitido.
+  - DECIDIDO 10-oct: el trato regala Prefacio + Cap. 1 y 2 (Introducción y Templo).
+  - ⚠️ ESPERAR AL 28-NOV-2026: termina KDP Select de la 1.ª edición. Antes de esa fecha NO publicar capítulos completos ni EPUB/PDF en el sitio ni en Ko-fi (solo muestra ≤10%). Desde el 28-nov: libro completo permitido en bothinobody.com (ver instrucción §3b del documento de control de Claudio KDP).
   - Pendiente decidir: plataforma de pago (propuesta: Ko-fi — propinas, tienda de ebook y membresías en una sola cuenta)
   - Poner el link/QR de esta página DENTRO del ebook (los piratas no visitan el sitio; el libro sí viaja)
 
