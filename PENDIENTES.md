@@ -28,7 +28,8 @@
   - Necesito ("quiero leerlo antes de pagar") → el trato del demonio (por pulir)
   - Decido → CFF, Guardia del Día, Sembrando papas en la Luna, colaboraciones
   - Licencia de uso para IA (borrador v1.0): DECIDIDO 2-oct — SIN uso comercial, base CC BY-NC 4.0, atribución obligatoria; lo comercial se negocia caso por caso. Falta: excluir citas de terceros y pasajes co-creados; quitar "compatible con CC BY"
-  - Pendiente decidir: qué capítulos se regalan en el trato; qué cuentas de pago existen
+  - DECIDIDO 10-oct: el trato regala Prefacio + Cap. 1 y 2 (Introducción y Templo). Fuera de KDP Select y sin DRM → permitido.
+  - Pendiente decidir: plataforma de pago (propuesta: Ko-fi — propinas, tienda de ebook y membresías en una sola cuenta)
   - Poner el link/QR de esta página DENTRO del ebook (los piratas no visitan el sitio; el libro sí viaja)
 
 ## Fuera por ahora
