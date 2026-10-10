@@ -11,7 +11,7 @@
 - [ ] Unir 2.ª ed y 1.ª ed en la misma serie (AHBSS) en Amazon
 - [ ] Revisar ficha de Amazon: sale como "Spanish Edition" y en "Politics & Social Sciences"
 - [ ] Edición del texto del sitio con Bothi
-- [ ] Links de Buy Me a Coffee y Patreon (hoy dicen "Pronto")
+- [ ] Link de Ko-fi (reemplaza Buy Me a Coffee y Patreon, que hoy dicen "Pronto")
 - [x] ASIN de la 2.ª edición: B0HMC8RRY8 (en vivo 9-oct, sitio actualizado)
 - [ ] (nota anterior) ASIN de la 2.ª edición (Kindle publicado 7-oct, en revisión): UN solo ASIN con "Elige tu idioma" → los dos botones de Amazon se vuelven uno. Fuera de KDP Select y sin DRM → sí se puede vender/regalar ebook en el sitio
 - [ ] Memes corregidos: "I"m not the Buddha", "bodhisatt", "bodhitva", Bodhisattva con B mayúscula
@@ -30,7 +30,7 @@
   - Licencia de uso para IA (borrador v1.0): DECIDIDO 2-oct — SIN uso comercial, base CC BY-NC 4.0, atribución obligatoria; lo comercial se negocia caso por caso. Falta: excluir citas de terceros y pasajes co-creados; quitar "compatible con CC BY"
   - DECIDIDO 10-oct: el trato regala Prefacio + Cap. 1 y 2 (Introducción y Templo).
   - ⚠️ ESPERAR AL 28-NOV-2026: termina KDP Select de la 1.ª edición. Antes de esa fecha NO publicar capítulos completos ni EPUB/PDF en el sitio ni en Ko-fi (solo muestra ≤10%). Desde el 28-nov: libro completo permitido en bothinobody.com (ver instrucción §3b del documento de control de Claudio KDP).
-  - Pendiente decidir: plataforma de pago (propuesta: Ko-fi — propinas, tienda de ebook y membresías en una sola cuenta)
+  - DECIDIDO 10-oct: plataforma de pago = Ko-fi (propinas ya; tienda de ebook desde 28-nov). Al crear la cuenta: APAGAR "Contributor" en Settings → Payment. Pendiente: confirmar PayPal/Stripe para cobrar.
   - Poner el link/QR de esta página DENTRO del ebook (los piratas no visitan el sitio; el libro sí viaja)
 
 ## Fuera por ahora
