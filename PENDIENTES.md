@@ -12,7 +12,8 @@
 - [ ] Revisar ficha de Amazon: sale como "Spanish Edition" y en "Politics & Social Sciences"
 - [ ] Edición del texto del sitio con Bothi
 - [x] Ko-fi conectado: ko-fi.com/bothinobody (tacos de $3, PayPal personal, plan Standard) — 10-oct
-- [ ] Stripe en Ko-fi (tarjetas/Apple Pay) · DBA "Bothi Nobody" en Harris County + EIN opcional · PayPal a business antes del 28-nov
+- [x] Stripe conectado a Ko-fi (cuenta existente de Substack; pagos semanales; Radar Lite; Stripe Tax solo monitoreo) — 10-oct
+- [ ] DBA "Bothi Nobody" en Harris County + EIN opcional · PayPal a business antes del 28-nov
 - [x] ASIN de la 2.ª edición: B0HMC8RRY8 (en vivo 9-oct, sitio actualizado)
 - [ ] (nota anterior) ASIN de la 2.ª edición (Kindle publicado 7-oct, en revisión): UN solo ASIN con "Elige tu idioma" → los dos botones de Amazon se vuelven uno. Fuera de KDP Select y sin DRM → sí se puede vender/regalar ebook en el sitio
 - [ ] Memes corregidos: "I"m not the Buddha", "bodhisatt", "bodhitva", Bodhisattva con B mayúscula
