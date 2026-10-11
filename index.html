@@ -197,6 +197,16 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
 .subbox iframe{display:block;width:100%;height:320px;border:1px solid var(--line);border-radius:3px;background:#fff}
 .bio{font-family:var(--display);font-size:var(--step-1);line-height:1.45;margin-top:22px;max-width:40rem}
 .bio-sign{margin-top:18px;font-family:var(--mono);font-size:.8rem;color:var(--saffron);letter-spacing:.04em}
+.evo{display:grid;gap:40px;margin-top:36px}
+.evo-row h3{font-size:var(--step-1);margin-bottom:14px}
+.evo-track{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:18px;align-items:center;max-width:44rem}
+.evo-item{margin:0;min-width:0}
+.evo-item img,.evo-item .ph{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--line)}
+.evo-item .ph{display:grid;place-items:center;font-family:var(--mono);font-size:.75rem;color:var(--muted);text-align:center;padding:12px;border-style:dashed}
+.evo-item figcaption{margin-top:10px;font-size:.9rem;color:var(--muted)}
+.evo-item figcaption b{display:block;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--saffron);font-weight:500}
+.evo-arrow{font-family:var(--mono);color:var(--saffron);font-size:1.4rem}
+@media (max-width:520px){.evo-track{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.evo-arrow{display:none}}
 </style>
 
 </head>
@@ -365,6 +375,32 @@ footer{padding-block:40px 56px;font-family:var(--mono);font-size:.78rem;color:va
         <div class="p"><span lang="es">Parte 3 · semilla</span><span lang="en">Part 3 · seed</span></div>
         <h3><span lang="es">Escapando de Nunca Jamás</span><span lang="en">Escaping Neverland</span></h3>
         <p><span lang="es">"Seré feliz cuando…" El país donde todos están y nadie puede estar.</span><span lang="en">"I'll be happy when…" The country everyone is in and no one can be.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portadas">
+    <div class="col">
+      <span class="tag">[[Buddy]]</span>
+      <h2><span lang="es">Taller de portadas</span><span lang="en">Cover workshop</span></h2>
+      <p class="intro"><span lang="es">Las portadas también se escriben y se reescriben. Así han cambiado.</span><span lang="en">Covers get written and rewritten too. Here's how they've changed.</span></p>
+    </div>
+    <div class="evo">
+      <div class="evo-row">
+        <h3>Guías y Palancas</h3>
+        <div class="evo-track">
+          <figure class="evo-item"><img src="img/cover-gyp-v1.jpg" alt="Portada de la 1.ª edición de Guides and Levers, 2025" loading="lazy"><figcaption><b><span lang="es">1.ª edición · 2025</span><span lang="en">1st edition · 2025</span></b><span lang="es">La primera aventura, todavía firmada Bothi Buddy.</span><span lang="en">The first adventure, still signed Bothi Buddy.</span></figcaption></figure>
+          <span class="evo-arrow" aria-hidden="true">→</span>
+          <figure class="evo-item"><div class="ph"><span lang="es">Portada de la 2.ª edición pronto</span><span lang="en">2nd edition cover coming</span></div><figcaption><b><span lang="es">2.ª edición · 2026</span><span lang="en">2nd edition · 2026</span></b><span lang="es">Corregida, aumentada y con voces. Firmada Bothi Nobody.</span><span lang="en">Revised, expanded and voiced. Signed Bothi Nobody.</span></figcaption></figure>
+        </div>
+      </div>
+      <div class="evo-row">
+        <h3><span lang="es">El Mensaje Detrás del Mensaje</span><span lang="en">The Message Behind the Message</span></h3>
+        <div class="evo-track">
+          <figure class="evo-item"><img src="img/mdm-cover.jpg" alt="Primer concepto de portada de MDM: el aventurero frente a la niebla" loading="lazy"><figcaption><b><span lang="es">Concepto 1</span><span lang="en">Concept 1</span></b><span lang="es">El aventurero frente a la niebla dorada. Algo acecha abajo.</span><span lang="en">The adventurer facing the golden fog. Something lurks below.</span></figcaption></figure>
+          <span class="evo-arrow" aria-hidden="true">→</span>
+          <figure class="evo-item"><img src="img/cover-mdm-c2.jpg" alt="Segundo concepto de portada de MDM: caballeros dorados arriba y su reflejo demoníaco abajo" loading="lazy"><figcaption><b><span lang="es">Concepto 2 · teaser</span><span lang="en">Concept 2 · teaser</span></b><span lang="es">La armadura brilla arriba. El reflejo dice otra cosa.</span><span lang="en">The armor shines above. The reflection says something else.</span></figcaption></figure>
+        </div>
       </div>
     </div>
   </section>
