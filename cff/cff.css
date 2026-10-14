@@ -1,0 +1,54 @@
+/* Biblioteca CFF — misma paleta y tipografía que bothinobody.com */
+:root{--bg:#E9ECE6;--surface:#F5F6F2;--ink:#1B2A33;--muted:#56656C;--line:#C3CBC4;--saffron:#B9651A;--lapis:#2F4F8A;
+--display:"Gloock",Georgia,serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#121A1F;--surface:#18232A;--ink:#E4E8E2;--muted:#9AA8AD;--line:#2E3C44;--saffron:#E39A4C;--lapis:#8FAEE6;color-scheme:dark}}
+*{box-sizing:border-box}
+html[data-lang="es"] [lang="en"]:not(html),html[data-lang="en"] [lang="es"]:not(html){display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.6 var(--body);padding-inline:20px;padding-block:0 48px}
+main,footer,.top{max-width:52rem;margin-inline:auto}
+a{color:var(--lapis);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--saffron);outline-offset:3px}
+.top{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-block:16px;border-bottom:1px solid var(--line);margin-bottom:36px}
+.top .home{font-family:var(--display);font-size:1.2rem;color:var(--ink);text-decoration:none}
+.top nav{flex:1;font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.top nav a{color:var(--muted);text-decoration:none}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{font:500 .75rem var(--mono);background:transparent;color:var(--muted);border:0;padding:5px 11px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+h1,h2{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
+h1{font-size:clamp(1.9rem,5vw,2.7rem)}
+h2{font-size:1.35rem;margin-bottom:10px}
+p{margin:0}
+.tag{font-family:var(--mono);font-size:.78rem;color:var(--saffron);display:block;margin-bottom:12px}
+.intro p{color:var(--muted);margin-top:14px;max-width:40rem}
+.intro .count{font-family:var(--mono);font-size:.8rem;letter-spacing:.04em}
+.id{font-family:var(--mono);font-size:.82rem;color:var(--saffron);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);padding:2px 7px;border-radius:2px}
+.badge.tratado{border-color:var(--saffron);background:var(--saffron);color:var(--bg)}
+.catalog{list-style:none;padding:0;margin:32px 0 0;border-top:1px solid var(--line)}
+.catalog li{border-bottom:1px solid var(--line)}
+.catalog a{display:grid;gap:6px;padding-block:18px;text-decoration:none;color:var(--ink)}
+.catalog a:hover .t{color:var(--lapis)}
+.catalog .row1{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.catalog .langs{margin-left:auto;font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.catalog .t{font-family:var(--display);font-size:1.2rem;line-height:1.25}
+.catalog .r{color:var(--muted);font-size:.95rem}
+.catalog .is-tratado{border-left:3px solid var(--saffron);padding-left:14px}
+.crumb{margin-bottom:22px;font-family:var(--mono);font-size:.8rem}
+.crumb a{text-decoration:none}
+.paper .meta-top{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.en-title{font-family:var(--display);font-style:italic;color:var(--muted);font-size:1.15rem;margin-top:12px}
+.en-title.muted{font-family:var(--mono);font-style:normal;font-size:.8rem}
+.resumen{margin-top:22px;font-size:1.1rem;max-width:40rem}
+.downloads{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.dl{display:grid;gap:2px;border:1.5px solid var(--ink);border-radius:3px;padding:12px 16px;text-decoration:none;color:var(--ink);min-width:0}
+.dl:hover{border-color:var(--saffron)}
+.dl b{font-weight:700}
+.dl span{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.cita{margin-top:40px;border-top:1px solid var(--line);padding-top:24px}
+.cita-text{background:var(--surface);border:1px solid var(--line);padding:14px 16px;border-radius:3px;font-size:.95rem;overflow-wrap:anywhere;user-select:all}
+.copy{margin-top:12px;font:500 .8rem var(--mono);background:var(--ink);color:var(--bg);border:0;padding:8px 14px;border-radius:3px;cursor:pointer}
+.archive{margin-top:32px}
+.archive ul{padding-left:1.1em;color:var(--muted)}
+footer{margin-top:56px;border-top:1px solid var(--line);padding-top:18px;font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+footer code{font-family:var(--mono)}

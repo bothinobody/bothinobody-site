@@ -22,6 +22,7 @@
 - [ ] "Elige tu aventura" como puerta de entrada: gatito sagrado / gallo dorado → glosario bilingüe (el doble sentido, en insinuación) → MDM; Gran Jefe → el mapa
 
 ## Secciones nuevas
+- [x] **Biblioteca CFF** /cff/ + /cff/wp-001…016/ (14-oct): 16 fichas, 22 PDFs. Regenerar con `python3 tools/build_cff.py` desde `_data/FICHAS_CFF.md`. Versiones viejas → `_data/archivo.json`. Substack pendiente en todas las fichas.
 - [x] **Substack en el sitio** (7-oct): sección "Lo último del cuaderno" (se actualiza sola vía /api/substack en worker.js) + formulario de suscripción embebido
 - [ ] **Diálogos con Petunia (blog)** — las conversaciones del proyecto con la Tribu Agrajag (Copilot, DeepSeek, Gemini, Kimi, Grok, Claude): capítulos, notas al margen, compañía. Propuesta: que viva en Substack y aparezca sola en el sitio. Por definir: formato de cada entrada, fechas, idioma.
 - [ ] **Landing "Hey Buddy, no seas pirata"** — aventura interactiva con el mapa de verbos como embudo (borrador de Bothi, 30-sep-2026):

@@ -5,3 +5,5 @@ wrangler.jsonc
 PENDIENTES.md
 worker.js
 robots.txt.bak
+_data
+tools
